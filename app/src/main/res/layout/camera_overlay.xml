@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/camera_overlay_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar"
+            android:id="@+id/loading_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/camera_cord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="null"
+            android:layout_marginTop="50dp"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/button_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="600dp"
+            android:layout_marginLeft="300dp"
+            android:text="start" />
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="550dp"
+            android:layout_marginLeft="300dp"
+            android:text="add" />
+
+        <Button
+            android:id="@+id/button_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="600dp"
+            android:layout_marginLeft="50dp"
+            android:text="complete" />
+
+        <EditText
+            android:id="@+id/shape_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            android:visibility="invisible"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:layout_marginTop="300dp" />
+
+    <include layout="@layout/sample_app_title_bar"/>
+
+</RelativeLayout>
