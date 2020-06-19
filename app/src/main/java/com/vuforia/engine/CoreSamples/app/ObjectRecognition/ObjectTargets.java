@@ -10,6 +10,9 @@ countries.
 package com.vuforia.engine.CoreSamples.app.ObjectRecognition;
 
 import android.app.AlertDialog;
+import android.arch.lifecycle.LifecycleOwner;
+import android.arch.lifecycle.Observer;
+import android.arch.lifecycle.ViewModelProviders;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -22,6 +25,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.KeyEvent;
@@ -42,7 +46,6 @@ import android.widget.Toast;
 
 import com.kircherelectronics.fsensor.BaseFilter;
 import com.kircherelectronics.fsensor.filter.averaging.MeanFilter;
-import com.kircherelectronics.fsensor.observer.SensorSubject;
 import com.kircherelectronics.fsensor.sensor.FSensor;
 import com.kircherelectronics.fsensor.sensor.acceleration.AccelerationSensor;
 import com.kircherelectronics.fsensor.sensor.gyroscope.ComplementaryGyroscopeSensor;
@@ -149,9 +152,9 @@ public class ObjectTargets extends SampleActivityBase implements SampleApplicati
     private SQLiteDatabase db;
 
     //Sensor
-    private FSensor rotationSensor;
+    /*private FSensor rotationSensor;
     private FSensor accSensor;
-    private BaseFilter baseFilter;
+    private BaseFilter baseFilter;*/
 
     //Button
     private Button start_button;
@@ -175,7 +178,7 @@ public class ObjectTargets extends SampleActivityBase implements SampleApplicati
     private long start = 0;
     private long end = 0;
 
-    private SensorSubject.SensorObserver rotationObserver = new SensorSubject.SensorObserver() {
+    /*private SensorSubject.SensorObserver rotationObserver = new SensorSubject.SensorObserver() {
         @Override
         public void onSensorChanged(float[] values) {
             // Do interesting things here
@@ -190,9 +193,9 @@ public class ObjectTargets extends SampleActivityBase implements SampleApplicati
             rotation[1] = (float) Math.toDegrees(rotation[1]);
             rotation[2] = (float) Math.toDegrees(rotation[2]);
         }
-    };
+    };*/
 
-    private SensorSubject.SensorObserver accObserver = new SensorSubject.SensorObserver() {
+    /*private SensorSubject.SensorObserver accObserver = new SensorSubject.SensorObserver() {
         @Override
         public void onSensorChanged(float[] values) {
             end = System.currentTimeMillis();
@@ -223,7 +226,7 @@ public class ObjectTargets extends SampleActivityBase implements SampleApplicati
             }
             start = end;
         }
-    };
+    };*/
 
     private float[] calculateOffset(){
         float[] vel = new float[3];
@@ -317,18 +320,18 @@ public class ObjectTargets extends SampleActivityBase implements SampleApplicati
                         float c_z = camera_cord[11];
                         TextView camera_cord_text = findViewById(R.id.camera_cord);
                         String c_cord = "x: " + (-c_x*100) + "\ny: " + c_y*100 + "\nz: " + (-c_z*100);
-                        String eu_cord = "\nyaw: " + rotation[0] + "\npitch: " + rotation[1] + "\nroll: " + rotation[2];
+                        /*String eu_cord = "\nyaw: " + rotation[0] + "\npitch: " + rotation[1] + "\nroll: " + rotation[2];
                         float c = (float) (rotation[0]*Math.PI/180);
                         float b = (float) (rotation[1]*Math.PI/180);
                         float a = (float) (rotation[2]*Math.PI/180);
                         world_cord[0] = (float) (Math.cos(b)*Math.cos(c)*c_x + (Math.cos(c)*Math.sin(a)*Math.sin(b) - Math.cos(a)*Math.sin(c))*c_y - (Math.sin(a)*Math.sin(c) + Math.cos(a)*Math.cos(c)*Math.sin(b))*c_z);
                         world_cord[1] = (float) (Math.cos(b)*Math.sin(c)*c_x + (Math.cos(a)*Math.cos(c) + Math.sin(a)*Math.sin(b)*Math.sin(c))*c_y + (Math.cos(c)*Math.sin(a) - Math.cos(a)*Math.sin(b)*Math.sin(c))*c_z);
-                        world_cord[2] = (float) (Math.sin(b)*c_x - Math.cos(b)*Math.sin(a)*c_y + Math.cos(a)*Math.cos(b)*c_z);
-
+                        world_cord[2] = (float) (Math.sin(b)*c_x - Math.cos(b)*Math.sin(a)*c_y + Math.cos(a)*Math.cos(b)*c_z);*/
+                        SensorViewModel sensorViewModel = 
                         String w_cord = "\nw_x: " + world_cord[0]*100 + "\nw_y: " + world_cord[1]*100 + "\nw_z: " + world_cord[2]*100;
                         String str_a = "\na_x: " + t_a[0]*100 + "\na_y: " + t_a[1]*100 + "\na_z: " + t_a[2]*100;
                         String str_off = "\noff_x: " + offset[0]*100 + "\noff_y: " + offset[1]*100 + "\noff_z: " + offset[2]*100;
-                        camera_cord_text.setText(c_cord + eu_cord + w_cord + str_a + str_off);
+                        camera_cord_text.setText(c_cord + w_cord + str_a + str_off);
 
                         camera_cord_text.setTextColor(Color.rgb(255, 0, 0));
                 }
@@ -415,14 +418,14 @@ public class ObjectTargets extends SampleActivityBase implements SampleApplicati
         complete_button.setOnClickListener(this);
         shape_name = findViewById(R.id.shape_name);
         shape_name.setOnEditorActionListener(this);
-        rotationSensor = new ComplementaryGyroscopeSensor(this);
+        /*rotationSensor = new ComplementaryGyroscopeSensor(this);
         rotationSensor.register(rotationObserver);
         rotationSensor.start();
         accSensor = new AccelerationSensor(this);
         accSensor.register(accObserver);
         accSensor.start();
         baseFilter = new MeanFilter();
-        ((MeanFilter) baseFilter).setTimeConstant((float) 0.5);
+        ((MeanFilter) baseFilter).setTimeConstant((float) 0.5);*/
         super.onResume();
     }
 

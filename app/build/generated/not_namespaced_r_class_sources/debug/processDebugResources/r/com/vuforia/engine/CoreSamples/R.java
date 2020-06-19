@@ -12,221 +12,532 @@ public final class R {
     public static final int bottom_down=0x7f010000;
     public static final int bottom_up=0x7f010001;
   }
+  public static final class attr {
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int font=0x7f020000;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int fontProviderAuthority=0x7f020001;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     */
+    public static final int fontProviderCerts=0x7f020002;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>async</td><td>1</td><td></td></tr>
+     * <tr><td>blocking</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int fontProviderFetchStrategy=0x7f020003;
+    /**
+     * <p>May be an integer value, such as "<code>100</code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
+     * </table>
+     */
+    public static final int fontProviderFetchTimeout=0x7f020004;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int fontProviderPackage=0x7f020005;
+    /**
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     */
+    public static final int fontProviderQuery=0x7f020006;
+    /**
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>italic</td><td>1</td><td></td></tr>
+     * <tr><td>normal</td><td>0</td><td></td></tr>
+     * </table>
+     */
+    public static final int fontStyle=0x7f020007;
+    /**
+     * <p>May be an integer value, such as "<code>100</code>".
+     */
+    public static final int fontWeight=0x7f020008;
+  }
+  public static final class bool {
+    public static final int abc_action_bar_embed_tabs=0x7f030000;
+  }
   public static final class color {
-    public static final int black=0x7f020000;
-    public static final int gray=0x7f020001;
-    public static final int light_gray=0x7f020002;
-    public static final int semi_transparent_black=0x7f020003;
-    public static final int transparent=0x7f020004;
-    public static final int white=0x7f020005;
+    public static final int black=0x7f040000;
+    public static final int gray=0x7f040001;
+    public static final int light_gray=0x7f040002;
+    public static final int notification_action_color_filter=0x7f040003;
+    public static final int notification_icon_bg_color=0x7f040004;
+    public static final int ripple_material_light=0x7f040005;
+    public static final int secondary_text_default_material_light=0x7f040006;
+    public static final int semi_transparent_black=0x7f040007;
+    public static final int transparent=0x7f040008;
+    public static final int white=0x7f040009;
   }
   public static final class dimen {
-    public static final int button_reset_dimens=0x7f030000;
-    public static final int menu_activities_list_padding_left=0x7f030001;
-    public static final int menu_activities_list_padding_top_down=0x7f030002;
-    public static final int menu_entries_sides_padding=0x7f030003;
-    public static final int menu_entries_text=0x7f030004;
-    public static final int menu_entries_title=0x7f030005;
-    public static final int menu_entries_top_down_padding=0x7f030006;
-    public static final int menu_entries_top_down_radio_padding=0x7f030007;
-    public static final int menu_title=0x7f030008;
-    public static final int menu_title_padding=0x7f030009;
-    public static final int modes_buttons_spacing=0x7f03000a;
+    public static final int button_reset_dimens=0x7f050000;
+    public static final int compat_button_inset_horizontal_material=0x7f050001;
+    public static final int compat_button_inset_vertical_material=0x7f050002;
+    public static final int compat_button_padding_horizontal_material=0x7f050003;
+    public static final int compat_button_padding_vertical_material=0x7f050004;
+    public static final int compat_control_corner_material=0x7f050005;
+    public static final int menu_activities_list_padding_left=0x7f050006;
+    public static final int menu_activities_list_padding_top_down=0x7f050007;
+    public static final int menu_entries_sides_padding=0x7f050008;
+    public static final int menu_entries_text=0x7f050009;
+    public static final int menu_entries_title=0x7f05000a;
+    public static final int menu_entries_top_down_padding=0x7f05000b;
+    public static final int menu_entries_top_down_radio_padding=0x7f05000c;
+    public static final int menu_title=0x7f05000d;
+    public static final int menu_title_padding=0x7f05000e;
+    public static final int modes_buttons_spacing=0x7f05000f;
+    public static final int notification_action_icon_size=0x7f050010;
+    public static final int notification_action_text_size=0x7f050011;
+    public static final int notification_big_circle_margin=0x7f050012;
+    public static final int notification_content_margin_start=0x7f050013;
+    public static final int notification_large_icon_height=0x7f050014;
+    public static final int notification_large_icon_width=0x7f050015;
+    public static final int notification_main_column_padding_top=0x7f050016;
+    public static final int notification_media_narrow_margin=0x7f050017;
+    public static final int notification_right_icon_size=0x7f050018;
+    public static final int notification_right_side_padding_top=0x7f050019;
+    public static final int notification_small_icon_background_padding=0x7f05001a;
+    public static final int notification_small_icon_size_as_large=0x7f05001b;
+    public static final int notification_subtext_size=0x7f05001c;
+    public static final int notification_top_pad=0x7f05001d;
+    public static final int notification_top_pad_large_text=0x7f05001e;
   }
   public static final class drawable {
-    public static final int btn_astro=0x7f040000;
-    public static final int btn_astro_selected=0x7f040001;
-    public static final int btn_chair=0x7f040002;
-    public static final int btn_chair_selected=0x7f040003;
-    public static final int btn_drone=0x7f040004;
-    public static final int btn_drone_selected=0x7f040005;
-    public static final int btn_reset=0x7f040006;
-    public static final int btn_reset_selected=0x7f040007;
-    public static final int button_background=0x7f040008;
-    public static final int camera_button_background=0x7f040009;
-    public static final int card_info=0x7f04000a;
-    public static final int checkmark=0x7f04000b;
-    public static final int icon=0x7f04000c;
-    public static final int icon_camera_normal=0x7f04000d;
-    public static final int icon_camera_pressed=0x7f04000e;
-    public static final int icon_content_placement=0x7f04000f;
-    public static final int icon_ground_plane=0x7f040010;
-    public static final int icon_mid_air=0x7f040011;
-    public static final int logo=0x7f040012;
-    public static final int reticle=0x7f040013;
-    public static final int round_bg=0x7f040014;
-    public static final int sample_app_toast_background=0x7f040015;
-    public static final int scanline=0x7f040016;
-    public static final int selector_btn_astro=0x7f040017;
-    public static final int selector_btn_drone=0x7f040018;
-    public static final int selector_btn_product=0x7f040019;
-    public static final int selector_btn_reset=0x7f04001a;
-    public static final int vuforia_splash=0x7f04001b;
+    public static final int btn_astro=0x7f060000;
+    public static final int btn_astro_selected=0x7f060001;
+    public static final int btn_chair=0x7f060002;
+    public static final int btn_chair_selected=0x7f060003;
+    public static final int btn_drone=0x7f060004;
+    public static final int btn_drone_selected=0x7f060005;
+    public static final int btn_reset=0x7f060006;
+    public static final int btn_reset_selected=0x7f060007;
+    public static final int button_background=0x7f060008;
+    public static final int camera_button_background=0x7f060009;
+    public static final int card_info=0x7f06000a;
+    public static final int checkmark=0x7f06000b;
+    public static final int icon=0x7f06000c;
+    public static final int icon_camera_normal=0x7f06000d;
+    public static final int icon_camera_pressed=0x7f06000e;
+    public static final int icon_content_placement=0x7f06000f;
+    public static final int icon_ground_plane=0x7f060010;
+    public static final int icon_mid_air=0x7f060011;
+    public static final int logo=0x7f060012;
+    public static final int notification_action_background=0x7f060013;
+    public static final int notification_bg=0x7f060014;
+    public static final int notification_bg_low=0x7f060015;
+    public static final int notification_bg_low_normal=0x7f060016;
+    public static final int notification_bg_low_pressed=0x7f060017;
+    public static final int notification_bg_normal=0x7f060018;
+    public static final int notification_bg_normal_pressed=0x7f060019;
+    public static final int notification_icon_background=0x7f06001a;
+    public static final int notification_template_icon_bg=0x7f06001b;
+    public static final int notification_template_icon_low_bg=0x7f06001c;
+    public static final int notification_tile_bg=0x7f06001d;
+    public static final int notify_panel_notification_icon_bg=0x7f06001e;
+    public static final int reticle=0x7f06001f;
+    public static final int round_bg=0x7f060020;
+    public static final int sample_app_toast_background=0x7f060021;
+    public static final int scanline=0x7f060022;
+    public static final int selector_btn_astro=0x7f060023;
+    public static final int selector_btn_drone=0x7f060024;
+    public static final int selector_btn_product=0x7f060025;
+    public static final int selector_btn_reset=0x7f060026;
+    public static final int vuforia_splash=0x7f060027;
   }
   public static final class id {
-    public static final int __arcore_cancelButton=0x7f050000;
-    public static final int __arcore_continueButton=0x7f050001;
-    public static final int __arcore_messageText=0x7f050002;
-    public static final int about_html_text=0x7f050003;
-    public static final int about_text_title=0x7f050004;
-    public static final int activities_list_title=0x7f050005;
-    public static final int alignment_overlay=0x7f050006;
-    public static final int bottom_bar=0x7f050007;
-    public static final int btn_astro=0x7f050008;
-    public static final int btn_drone=0x7f050009;
-    public static final int btn_furniture=0x7f05000a;
-    public static final int btn_reset=0x7f05000b;
-    public static final int button_add=0x7f05000c;
-    public static final int button_complete=0x7f05000d;
-    public static final int button_layout=0x7f05000e;
-    public static final int button_start=0x7f05000f;
-    public static final int camera_button=0x7f050010;
-    public static final int camera_cord=0x7f050011;
-    public static final int camera_overlay_layout=0x7f050012;
-    public static final int card_layout=0x7f050013;
-    public static final int ground_plane_layout=0x7f050014;
-    public static final int instance_image=0x7f050015;
-    public static final int instruction_text=0x7f050016;
-    public static final int instructions_view=0x7f050017;
-    public static final int loading_indicator=0x7f050018;
-    public static final int loading_layout=0x7f050019;
-    public static final int logo_image=0x7f05001a;
-    public static final int menu_group_title=0x7f05001b;
-    public static final int menu_group_title_divider=0x7f05001c;
-    public static final int message_text_view=0x7f05001d;
-    public static final int mode_indicator=0x7f05001e;
-    public static final int reset_btn=0x7f05001f;
-    public static final int reset_btn_overlay_layout=0x7f050020;
-    public static final int scan_line=0x7f050021;
-    public static final int settings_menu=0x7f050022;
-    public static final int settings_menu_title=0x7f050023;
-    public static final int shape_name=0x7f050024;
-    public static final int splash_image=0x7f050025;
-    public static final int text_type=0x7f050026;
-    public static final int text_value=0x7f050027;
-    public static final int topbar_layout=0x7f050028;
-    public static final int topbar_title=0x7f050029;
-    public static final int topbar_view=0x7f05002a;
+    public static final int __arcore_cancelButton=0x7f070000;
+    public static final int __arcore_continueButton=0x7f070001;
+    public static final int __arcore_messageText=0x7f070002;
+    public static final int about_html_text=0x7f070003;
+    public static final int about_text_title=0x7f070004;
+    public static final int action_container=0x7f070005;
+    public static final int action_divider=0x7f070006;
+    public static final int action_image=0x7f070007;
+    public static final int action_text=0x7f070008;
+    public static final int actions=0x7f070009;
+    public static final int activities_list_title=0x7f07000a;
+    public static final int alignment_overlay=0x7f07000b;
+    public static final int async=0x7f07000c;
+    public static final int blocking=0x7f07000d;
+    public static final int bottom_bar=0x7f07000e;
+    public static final int btn_astro=0x7f07000f;
+    public static final int btn_drone=0x7f070010;
+    public static final int btn_furniture=0x7f070011;
+    public static final int btn_reset=0x7f070012;
+    public static final int button_add=0x7f070013;
+    public static final int button_complete=0x7f070014;
+    public static final int button_layout=0x7f070015;
+    public static final int button_start=0x7f070016;
+    public static final int camera_button=0x7f070017;
+    public static final int camera_cord=0x7f070018;
+    public static final int camera_overlay_layout=0x7f070019;
+    public static final int card_layout=0x7f07001a;
+    public static final int chronometer=0x7f07001b;
+    public static final int forever=0x7f07001c;
+    public static final int ground_plane_layout=0x7f07001d;
+    public static final int icon=0x7f07001e;
+    public static final int icon_group=0x7f07001f;
+    public static final int info=0x7f070020;
+    public static final int instance_image=0x7f070021;
+    public static final int instruction_text=0x7f070022;
+    public static final int instructions_view=0x7f070023;
+    public static final int italic=0x7f070024;
+    public static final int line1=0x7f070025;
+    public static final int line3=0x7f070026;
+    public static final int loading_indicator=0x7f070027;
+    public static final int loading_layout=0x7f070028;
+    public static final int logo_image=0x7f070029;
+    public static final int menu_group_title=0x7f07002a;
+    public static final int menu_group_title_divider=0x7f07002b;
+    public static final int message_text_view=0x7f07002c;
+    public static final int mode_indicator=0x7f07002d;
+    public static final int normal=0x7f07002e;
+    public static final int notification_background=0x7f07002f;
+    public static final int notification_main_column=0x7f070030;
+    public static final int notification_main_column_container=0x7f070031;
+    public static final int reset_btn=0x7f070032;
+    public static final int reset_btn_overlay_layout=0x7f070033;
+    public static final int right_icon=0x7f070034;
+    public static final int right_side=0x7f070035;
+    public static final int scan_line=0x7f070036;
+    public static final int settings_menu=0x7f070037;
+    public static final int settings_menu_title=0x7f070038;
+    public static final int shape_name=0x7f070039;
+    public static final int splash_image=0x7f07003a;
+    public static final int text=0x7f07003b;
+    public static final int text2=0x7f07003c;
+    public static final int text_type=0x7f07003d;
+    public static final int text_value=0x7f07003e;
+    public static final int time=0x7f07003f;
+    public static final int title=0x7f070040;
+    public static final int topbar_layout=0x7f070041;
+    public static final int topbar_title=0x7f070042;
+    public static final int topbar_view=0x7f070043;
+  }
+  public static final class integer {
+    public static final int status_bar_notification_info_maxnum=0x7f080000;
   }
   public static final class layout {
-    public static final int __arcore_education=0x7f060000;
-    public static final int about_screen=0x7f060001;
-    public static final int activities_list=0x7f060002;
-    public static final int activities_list_text_view=0x7f060003;
-    public static final int camera_overlay=0x7f060004;
-    public static final int camera_overlay_ground_plane=0x7f060005;
-    public static final int camera_overlay_model_targets=0x7f060006;
-    public static final int camera_overlay_reticle=0x7f060007;
-    public static final int camera_overlay_udt=0x7f060008;
-    public static final int camera_overlay_with_scanline=0x7f060009;
-    public static final int card=0x7f06000a;
-    public static final int sample_app_menu_group=0x7f06000b;
-    public static final int sample_app_menu_group_divider=0x7f06000c;
-    public static final int sample_app_menu_group_radio_button=0x7f06000d;
-    public static final int sample_app_menu_layer=0x7f06000e;
-    public static final int sample_app_message_view=0x7f06000f;
-    public static final int sample_app_title_bar=0x7f060010;
-    public static final int splash_screen=0x7f060011;
+    public static final int __arcore_education=0x7f090000;
+    public static final int about_screen=0x7f090001;
+    public static final int activities_list=0x7f090002;
+    public static final int activities_list_text_view=0x7f090003;
+    public static final int camera_overlay=0x7f090004;
+    public static final int camera_overlay_ground_plane=0x7f090005;
+    public static final int camera_overlay_model_targets=0x7f090006;
+    public static final int camera_overlay_reticle=0x7f090007;
+    public static final int camera_overlay_udt=0x7f090008;
+    public static final int camera_overlay_with_scanline=0x7f090009;
+    public static final int card=0x7f09000a;
+    public static final int notification_action=0x7f09000b;
+    public static final int notification_action_tombstone=0x7f09000c;
+    public static final int notification_template_custom_big=0x7f09000d;
+    public static final int notification_template_icon_group=0x7f09000e;
+    public static final int notification_template_part_chronometer=0x7f09000f;
+    public static final int notification_template_part_time=0x7f090010;
+    public static final int sample_app_menu_group=0x7f090011;
+    public static final int sample_app_menu_group_divider=0x7f090012;
+    public static final int sample_app_menu_group_radio_button=0x7f090013;
+    public static final int sample_app_menu_layer=0x7f090014;
+    public static final int sample_app_message_view=0x7f090015;
+    public static final int sample_app_title_bar=0x7f090016;
+    public static final int splash_screen=0x7f090017;
   }
   public static final class raw {
-    public static final int keep=0x7f070000;
+    public static final int keep=0x7f0a0000;
   }
   public static final class string {
-    public static final int INIT_ERROR=0x7f080000;
-    public static final int INIT_ERROR_DEVICE_NOT_SUPPORTED=0x7f080001;
-    public static final int INIT_ERROR_NO_CAMERA_ACCESS=0x7f080002;
-    public static final int INIT_ERROR_TRACKERS_NOT_INITIALIZED=0x7f080003;
-    public static final int INIT_LICENSE_ERROR_CANCELED_KEY=0x7f080004;
-    public static final int INIT_LICENSE_ERROR_INVALID_KEY=0x7f080005;
-    public static final int INIT_LICENSE_ERROR_MISSING_KEY=0x7f080006;
-    public static final int INIT_LICENSE_ERROR_NO_NETWORK_PERMANENT=0x7f080007;
-    public static final int INIT_LICENSE_ERROR_NO_NETWORK_TRANSIENT=0x7f080008;
-    public static final int INIT_LICENSE_ERROR_PRODUCT_TYPE_MISMATCH=0x7f080009;
-    public static final int INIT_LICENSE_ERROR_UNKNOWN_ERROR=0x7f08000a;
-    public static final int INIT_OBJECT_DATASET_NOT_FOUND=0x7f08000b;
-    public static final int INIT_OBJECT_DATASET_NOT_FOUND_TITLE=0x7f08000c;
-    public static final int UPDATE_ERROR_AUTHORIZATION_FAILED_DESC=0x7f08000d;
-    public static final int UPDATE_ERROR_AUTHORIZATION_FAILED_TITLE=0x7f08000e;
-    public static final int UPDATE_ERROR_BAD_FRAME_QUALITY_DESC=0x7f08000f;
-    public static final int UPDATE_ERROR_BAD_FRAME_QUALITY_TITLE=0x7f080010;
-    public static final int UPDATE_ERROR_NO_NETWORK_CONNECTION_DESC=0x7f080011;
-    public static final int UPDATE_ERROR_NO_NETWORK_CONNECTION_TITLE=0x7f080012;
-    public static final int UPDATE_ERROR_PROJECT_SUSPENDED_DESC=0x7f080013;
-    public static final int UPDATE_ERROR_PROJECT_SUSPENDED_TITLE=0x7f080014;
-    public static final int UPDATE_ERROR_REQUEST_TIMEOUT_DESC=0x7f080015;
-    public static final int UPDATE_ERROR_REQUEST_TIMEOUT_TITLE=0x7f080016;
-    public static final int UPDATE_ERROR_SERVICE_NOT_AVAILABLE_DESC=0x7f080017;
-    public static final int UPDATE_ERROR_SERVICE_NOT_AVAILABLE_TITLE=0x7f080018;
-    public static final int UPDATE_ERROR_TIMESTAMP_OUT_OF_RANGE_DESC=0x7f080019;
-    public static final int UPDATE_ERROR_TIMESTAMP_OUT_OF_RANGE_TITLE=0x7f08001a;
-    public static final int UPDATE_ERROR_UNKNOWN_DESC=0x7f08001b;
-    public static final int UPDATE_ERROR_UNKNOWN_TITLE=0x7f08001c;
-    public static final int UPDATE_ERROR_UPDATE_SDK_DESC=0x7f08001d;
-    public static final int UPDATE_ERROR_UPDATE_SDK_TITLE=0x7f08001e;
-    public static final int __arcore_cancel=0x7f08001f;
-    public static final int __arcore_continue=0x7f080020;
-    public static final int __arcore_install_app=0x7f080021;
-    public static final int __arcore_install_feature=0x7f080022;
-    public static final int __arcore_installing=0x7f080023;
-    public static final int activities_list_empty=0x7f080024;
-    public static final int activities_list_title_string=0x7f080025;
-    public static final int app_description=0x7f080026;
-    public static final int app_name=0x7f080027;
-    public static final int button_OK=0x7f080028;
-    public static final int button_continue=0x7f080029;
-    public static final int button_start=0x7f08002a;
-    public static final int content_desc_camera_button=0x7f08002b;
-    public static final int descr_btn_reset=0x7f08002c;
-    public static final int descr_checkmark=0x7f08002d;
-    public static final int descr_loading_icon=0x7f08002e;
-    public static final int descr_model_bike=0x7f08002f;
-    public static final int descr_model_lander=0x7f080030;
-    public static final int descr_reticle_searching=0x7f080031;
-    public static final int descr_scan_line=0x7f080032;
-    public static final int descr_vumark_instance=0x7f080033;
-    public static final int feature_cloud_reco=0x7f080034;
-    public static final int feature_cylinder_targets=0x7f080035;
-    public static final int feature_ground_plane=0x7f080036;
-    public static final int feature_image_targets=0x7f080037;
-    public static final int feature_model_targets=0x7f080038;
-    public static final int feature_multi_targets=0x7f080039;
-    public static final int feature_object_reco=0x7f08003a;
-    public static final int feature_user_targets=0x7f08003b;
-    public static final int feature_virtual_buttons=0x7f08003c;
-    public static final int feature_vumark=0x7f08003d;
-    public static final int instruct_empty=0x7f08003e;
-    public static final int instruct_gestures=0x7f08003f;
-    public static final int instruct_limited_move_device=0x7f080040;
-    public static final int instruct_point_device=0x7f080041;
-    public static final int instruct_relocalize=0x7f080042;
-    public static final int instruct_touch_screen=0x7f080043;
-    public static final int menu_back=0x7f080044;
-    public static final int menu_button_blue=0x7f080045;
-    public static final int menu_button_green=0x7f080046;
-    public static final int menu_button_red=0x7f080047;
-    public static final int menu_button_yellow=0x7f080048;
-    public static final int menu_camera=0x7f080049;
-    public static final int menu_contAutofocus=0x7f08004a;
-    public static final int menu_contAutofocus_error_off=0x7f08004b;
-    public static final int menu_contAutofocus_error_on=0x7f08004c;
-    public static final int menu_datasets=0x7f08004d;
-    public static final int menu_device_tracker=0x7f08004e;
-    public static final int menu_flash=0x7f08004f;
-    public static final int menu_flash_error_off=0x7f080050;
-    public static final int menu_flash_error_on=0x7f080051;
-    public static final int menu_next_guide_view=0x7f080052;
-    public static final int menu_versions=0x7f080053;
-    public static final int menu_virtual_buttons=0x7f080054;
-    public static final int mode_description=0x7f080055;
-    public static final int mode_mid_air=0x7f080056;
-    public static final int mode_product_placement=0x7f080057;
-    public static final int splash_screen_description=0x7f080058;
-    public static final int target_quality_error_desc=0x7f080059;
-    public static final int target_quality_error_title=0x7f08005a;
-    public static final int version_android=0x7f08005b;
-    public static final int version_vuforia=0x7f08005c;
+    public static final int INIT_ERROR=0x7f0b0000;
+    public static final int INIT_ERROR_DEVICE_NOT_SUPPORTED=0x7f0b0001;
+    public static final int INIT_ERROR_NO_CAMERA_ACCESS=0x7f0b0002;
+    public static final int INIT_ERROR_TRACKERS_NOT_INITIALIZED=0x7f0b0003;
+    public static final int INIT_LICENSE_ERROR_CANCELED_KEY=0x7f0b0004;
+    public static final int INIT_LICENSE_ERROR_INVALID_KEY=0x7f0b0005;
+    public static final int INIT_LICENSE_ERROR_MISSING_KEY=0x7f0b0006;
+    public static final int INIT_LICENSE_ERROR_NO_NETWORK_PERMANENT=0x7f0b0007;
+    public static final int INIT_LICENSE_ERROR_NO_NETWORK_TRANSIENT=0x7f0b0008;
+    public static final int INIT_LICENSE_ERROR_PRODUCT_TYPE_MISMATCH=0x7f0b0009;
+    public static final int INIT_LICENSE_ERROR_UNKNOWN_ERROR=0x7f0b000a;
+    public static final int INIT_OBJECT_DATASET_NOT_FOUND=0x7f0b000b;
+    public static final int INIT_OBJECT_DATASET_NOT_FOUND_TITLE=0x7f0b000c;
+    public static final int UPDATE_ERROR_AUTHORIZATION_FAILED_DESC=0x7f0b000d;
+    public static final int UPDATE_ERROR_AUTHORIZATION_FAILED_TITLE=0x7f0b000e;
+    public static final int UPDATE_ERROR_BAD_FRAME_QUALITY_DESC=0x7f0b000f;
+    public static final int UPDATE_ERROR_BAD_FRAME_QUALITY_TITLE=0x7f0b0010;
+    public static final int UPDATE_ERROR_NO_NETWORK_CONNECTION_DESC=0x7f0b0011;
+    public static final int UPDATE_ERROR_NO_NETWORK_CONNECTION_TITLE=0x7f0b0012;
+    public static final int UPDATE_ERROR_PROJECT_SUSPENDED_DESC=0x7f0b0013;
+    public static final int UPDATE_ERROR_PROJECT_SUSPENDED_TITLE=0x7f0b0014;
+    public static final int UPDATE_ERROR_REQUEST_TIMEOUT_DESC=0x7f0b0015;
+    public static final int UPDATE_ERROR_REQUEST_TIMEOUT_TITLE=0x7f0b0016;
+    public static final int UPDATE_ERROR_SERVICE_NOT_AVAILABLE_DESC=0x7f0b0017;
+    public static final int UPDATE_ERROR_SERVICE_NOT_AVAILABLE_TITLE=0x7f0b0018;
+    public static final int UPDATE_ERROR_TIMESTAMP_OUT_OF_RANGE_DESC=0x7f0b0019;
+    public static final int UPDATE_ERROR_TIMESTAMP_OUT_OF_RANGE_TITLE=0x7f0b001a;
+    public static final int UPDATE_ERROR_UNKNOWN_DESC=0x7f0b001b;
+    public static final int UPDATE_ERROR_UNKNOWN_TITLE=0x7f0b001c;
+    public static final int UPDATE_ERROR_UPDATE_SDK_DESC=0x7f0b001d;
+    public static final int UPDATE_ERROR_UPDATE_SDK_TITLE=0x7f0b001e;
+    public static final int __arcore_cancel=0x7f0b001f;
+    public static final int __arcore_continue=0x7f0b0020;
+    public static final int __arcore_install_app=0x7f0b0021;
+    public static final int __arcore_install_feature=0x7f0b0022;
+    public static final int __arcore_installing=0x7f0b0023;
+    public static final int activities_list_empty=0x7f0b0024;
+    public static final int activities_list_title_string=0x7f0b0025;
+    public static final int app_description=0x7f0b0026;
+    public static final int app_name=0x7f0b0027;
+    public static final int button_OK=0x7f0b0028;
+    public static final int button_continue=0x7f0b0029;
+    public static final int button_start=0x7f0b002a;
+    public static final int content_desc_camera_button=0x7f0b002b;
+    public static final int descr_btn_reset=0x7f0b002c;
+    public static final int descr_checkmark=0x7f0b002d;
+    public static final int descr_loading_icon=0x7f0b002e;
+    public static final int descr_model_bike=0x7f0b002f;
+    public static final int descr_model_lander=0x7f0b0030;
+    public static final int descr_reticle_searching=0x7f0b0031;
+    public static final int descr_scan_line=0x7f0b0032;
+    public static final int descr_vumark_instance=0x7f0b0033;
+    public static final int feature_cloud_reco=0x7f0b0034;
+    public static final int feature_cylinder_targets=0x7f0b0035;
+    public static final int feature_ground_plane=0x7f0b0036;
+    public static final int feature_image_targets=0x7f0b0037;
+    public static final int feature_model_targets=0x7f0b0038;
+    public static final int feature_multi_targets=0x7f0b0039;
+    public static final int feature_object_reco=0x7f0b003a;
+    public static final int feature_user_targets=0x7f0b003b;
+    public static final int feature_virtual_buttons=0x7f0b003c;
+    public static final int feature_vumark=0x7f0b003d;
+    public static final int instruct_empty=0x7f0b003e;
+    public static final int instruct_gestures=0x7f0b003f;
+    public static final int instruct_limited_move_device=0x7f0b0040;
+    public static final int instruct_point_device=0x7f0b0041;
+    public static final int instruct_relocalize=0x7f0b0042;
+    public static final int instruct_touch_screen=0x7f0b0043;
+    public static final int menu_back=0x7f0b0044;
+    public static final int menu_button_blue=0x7f0b0045;
+    public static final int menu_button_green=0x7f0b0046;
+    public static final int menu_button_red=0x7f0b0047;
+    public static final int menu_button_yellow=0x7f0b0048;
+    public static final int menu_camera=0x7f0b0049;
+    public static final int menu_contAutofocus=0x7f0b004a;
+    public static final int menu_contAutofocus_error_off=0x7f0b004b;
+    public static final int menu_contAutofocus_error_on=0x7f0b004c;
+    public static final int menu_datasets=0x7f0b004d;
+    public static final int menu_device_tracker=0x7f0b004e;
+    public static final int menu_flash=0x7f0b004f;
+    public static final int menu_flash_error_off=0x7f0b0050;
+    public static final int menu_flash_error_on=0x7f0b0051;
+    public static final int menu_next_guide_view=0x7f0b0052;
+    public static final int menu_versions=0x7f0b0053;
+    public static final int menu_virtual_buttons=0x7f0b0054;
+    public static final int mode_description=0x7f0b0055;
+    public static final int mode_mid_air=0x7f0b0056;
+    public static final int mode_product_placement=0x7f0b0057;
+    public static final int splash_screen_description=0x7f0b0058;
+    public static final int status_bar_notification_info_overflow=0x7f0b0059;
+    public static final int target_quality_error_desc=0x7f0b005a;
+    public static final int target_quality_error_title=0x7f0b005b;
+    public static final int version_android=0x7f0b005c;
+    public static final int version_vuforia=0x7f0b005d;
   }
   public static final class style {
-    public static final int SampleAppsTheme=0x7f090000;
+    public static final int SampleAppsTheme=0x7f0c0000;
+    public static final int TextAppearance_Compat_Notification=0x7f0c0001;
+    public static final int TextAppearance_Compat_Notification_Info=0x7f0c0002;
+    public static final int TextAppearance_Compat_Notification_Line2=0x7f0c0003;
+    public static final int TextAppearance_Compat_Notification_Time=0x7f0c0004;
+    public static final int TextAppearance_Compat_Notification_Title=0x7f0c0005;
+    public static final int Widget_Compat_NotificationActionContainer=0x7f0c0006;
+    public static final int Widget_Compat_NotificationActionText=0x7f0c0007;
+  }
+  public static final class styleable {
+    /**
+     * Attributes that can be used with a FontFamily.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.vuforia.engine.CoreSamples:fontProviderAuthority}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.vuforia.engine.CoreSamples:fontProviderCerts}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.vuforia.engine.CoreSamples:fontProviderFetchStrategy}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.vuforia.engine.CoreSamples:fontProviderFetchTimeout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.vuforia.engine.CoreSamples:fontProviderPackage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.vuforia.engine.CoreSamples:fontProviderQuery}</code></td><td></td></tr>
+     * </table>
+     * @see #FontFamily_fontProviderAuthority
+     * @see #FontFamily_fontProviderCerts
+     * @see #FontFamily_fontProviderFetchStrategy
+     * @see #FontFamily_fontProviderFetchTimeout
+     * @see #FontFamily_fontProviderPackage
+     * @see #FontFamily_fontProviderQuery
+     */
+    public static final int[] FontFamily={
+      0x7f020001, 0x7f020002, 0x7f020003, 0x7f020004, 
+      0x7f020005, 0x7f020006
+    };
+    /**
+     * <p>This symbol is the offset where the {@link com.vuforia.engine.CoreSamples.R.attr#fontProviderAuthority}
+     * attribute's value can be found in the {@link #FontFamily} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.vuforia.engine.CoreSamples:fontProviderAuthority
+     */
+    public static final int FontFamily_fontProviderAuthority=0;
+    /**
+     * <p>This symbol is the offset where the {@link com.vuforia.engine.CoreSamples.R.attr#fontProviderCerts}
+     * attribute's value can be found in the {@link #FontFamily} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name com.vuforia.engine.CoreSamples:fontProviderCerts
+     */
+    public static final int FontFamily_fontProviderCerts=1;
+    /**
+     * <p>This symbol is the offset where the {@link com.vuforia.engine.CoreSamples.R.attr#fontProviderFetchStrategy}
+     * attribute's value can be found in the {@link #FontFamily} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>async</td><td>1</td><td></td></tr>
+     * <tr><td>blocking</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.vuforia.engine.CoreSamples:fontProviderFetchStrategy
+     */
+    public static final int FontFamily_fontProviderFetchStrategy=2;
+    /**
+     * <p>This symbol is the offset where the {@link com.vuforia.engine.CoreSamples.R.attr#fontProviderFetchTimeout}
+     * attribute's value can be found in the {@link #FontFamily} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.vuforia.engine.CoreSamples:fontProviderFetchTimeout
+     */
+    public static final int FontFamily_fontProviderFetchTimeout=3;
+    /**
+     * <p>This symbol is the offset where the {@link com.vuforia.engine.CoreSamples.R.attr#fontProviderPackage}
+     * attribute's value can be found in the {@link #FontFamily} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.vuforia.engine.CoreSamples:fontProviderPackage
+     */
+    public static final int FontFamily_fontProviderPackage=4;
+    /**
+     * <p>This symbol is the offset where the {@link com.vuforia.engine.CoreSamples.R.attr#fontProviderQuery}
+     * attribute's value can be found in the {@link #FontFamily} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.vuforia.engine.CoreSamples:fontProviderQuery
+     */
+    public static final int FontFamily_fontProviderQuery=5;
+    /**
+     * Attributes that can be used with a FontFamilyFont.
+     * <p>Includes the following attributes:</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Attribute</th><th>Description</th></tr>
+     * <tr><td><code>{@link #FontFamilyFont_font com.vuforia.engine.CoreSamples:font}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.vuforia.engine.CoreSamples:fontStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.vuforia.engine.CoreSamples:fontWeight}</code></td><td></td></tr>
+     * </table>
+     * @see #FontFamilyFont_font
+     * @see #FontFamilyFont_fontStyle
+     * @see #FontFamilyFont_fontWeight
+     */
+    public static final int[] FontFamilyFont={
+      0x7f020000, 0x7f020007, 0x7f020008
+    };
+    /**
+     * <p>This symbol is the offset where the {@link com.vuforia.engine.CoreSamples.R.attr#font}
+     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     *
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     *
+     * @attr name com.vuforia.engine.CoreSamples:font
+     */
+    public static final int FontFamilyFont_font=0;
+    /**
+     * <p>This symbol is the offset where the {@link com.vuforia.engine.CoreSamples.R.attr#fontStyle}
+     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>italic</td><td>1</td><td></td></tr>
+     * <tr><td>normal</td><td>0</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.vuforia.engine.CoreSamples:fontStyle
+     */
+    public static final int FontFamilyFont_fontStyle=1;
+    /**
+     * <p>This symbol is the offset where the {@link com.vuforia.engine.CoreSamples.R.attr#fontWeight}
+     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     *
+     * <p>May be an integer value, such as "<code>100</code>".
+     *
+     * @attr name com.vuforia.engine.CoreSamples:fontWeight
+     */
+    public static final int FontFamilyFont_fontWeight=2;
   }
 }

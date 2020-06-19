@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.KalebKE:FSensor:v1.2.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/591ad28514116d9e7efb121ec40a6e23/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/591ad28514116d9e7efb121ec40a6e23/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/591ad28514116d9e7efb121ec40a6e23/jars/libs/commons-math3-3.6.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.KalebKE/FSensor/v1.2.1/65c3550da7022497924452fc04bfa0df6cb068fa/FSensor-v1.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
